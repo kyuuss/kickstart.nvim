@@ -12,13 +12,18 @@ return {
   config = function()
     require('neo-tree').setup({
       filesystem = {
+        filtered_items = {
+          visible = true,
+          hide_dotfiles = false,
+          hide_gitignore = true,
+        },
         follow_current_file = {
-          enable = true,
+          enabled = true,
         }
       },
       buffer = {
         follow_current_file = {
-          enable = true,
+          enabled = true,
         }
       }
     })
